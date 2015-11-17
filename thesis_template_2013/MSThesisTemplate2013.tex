@@ -1,0 +1,204 @@
+% This template requires a soft link to PJTpreamble.
+% The geometry is technically wrong, since the bottom margin must be
+% 1 inch, but it looks right when compiled.  Fidget with the line
+% ``\usepackage[top=.5in, bottom=1.5in, left=1.5in, right=1.5in]{geometry}''
+% if you have to.
+
+\documentclass[12pt]{article}
+\include{PJTpreamble}
+%\usepackage{amsfonts}
+\usepackage{setspace}
+\linespread{2}
+\usepackage{chngcntr}
+\usepackage{changebar}
+\counterwithin{figure}{section}
+%\usepackage{fullpage}
+\usepackage[top=.5in, bottom=1.5in, left=1.5in, right=1.5in]{geometry}
+%\usepackage[top=.5in,bottom=1in,left=1.5in,right=1.5in]{geometry}
+
+%\newtheorem{theorem}{Theorem}[section]
+%\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+%\newtheorem{corollary}[theorem]{Corollary}
+
+\newenvironment{proof}[1][Proof]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+%\newenvironment{definition}[1][Definition]{\begin{trivlist}\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{example}[1][Example]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+%\newenvironment{remark}[1][Remark]{\begin{trivlist}\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+
+\newcommand{\qed}{\nobreak \ifvmode \relax \else
+      \ifdim\lastskip<1.5em \hskip-\lastskip
+      \hskip1.5em plus0em minus0.5em \fi \nobreak
+      \vrule height0.75em width0.5em depth0.25em\fi}
+
+
+\setlength{\headsep}{.5in}
+
+\begin{document}
+
+
+\pagestyle{empty}
+\begin{titlepage}
+%The title page must contain the following information:  Title, Name, Degree, Department, University Name, Month and Year of Graduation.  The month of graduation will either be January, May or August.
+\begin{center}
+INFINITESIMAL PHASE RESPONSE CURVES FOR PIECEWISE SMOOTH DYNAMICAL SYSTEMS\end{center}
+\vfill
+\begin{center}
+by
+\end{center}
+\begin{center}
+YOUNGMIN PARK
+\end{center}
+\vfill
+\begin{center}
+Submitted in partial fulfillment of the requirements
+\end{center}
+\begin{center}
+For the degree of Master of Science
+\end{center}
+\vfill
+\begin{center}
+Thesis Advisor:  Dr. Peter J. Thomas\\
+%With help from MSTP candidate Kendrick Shaw.\\
+\end{center}
+\vfill
+\begin{center}
+Department of Mathematics\\ 
+\end{center}
+\begin{center}
+CASE WESTERN RESERVE UNIVERSITY
+\end{center}
+\vfill
+\begin{center}
+August, 2016
+\vfill
+\end{center}
+\end{titlepage}
+
+\input{signature_page} % open ``signature_page.tex'' to change names
+
+\newpage
+
+\section*{Dedication}
+To Millie Amp and her incessant meditation... ``Ohhhhhhhmmmmmmm''.
+\newpage
+
+\pagenumbering{roman}
+\pagestyle{plain}
+\tableofcontents
+\newpage
+
+\listoftables
+\addcontentsline{toc}{section}{List of Tables}
+\newpage
+
+\listoffigures
+\addcontentsline{toc}{section}{List of Figures}
+\newpage
+
+
+\section*{List of Abbreviations}
+\addcontentsline{toc}{section}{List of Abbreviations}
+CPG Central Pattern Generator\\
+DI Differential Inclusion\\
+iPRC Infinitesimal Phase Response Curve\\
+NW Northwest\\
+PRC Phase Response Curve\\
+PML Piecewise Linear Morris-Lecar\\
+PWL Piecewise Linear\\
+PWLDS Piecewise Linear Dynamical System\\
+$\mathbb{R}$ The Real Numbers\\
+$\mathbb{R}^+$ The nonnegative real numbers\\
+SW Southwest\\
+$||\cdot||$ Arbitrary Norm\\
+\newpage
+
+\section*{Acknowledgements}
+\addcontentsline{toc}{section}{Acknowledgements}
+Write like you've won the Oscars.
+\newpage
+
+
+
+%\section{List of Abbreviations}
+%\section{Glossary}
+%\doublespace
+
+\section*{Abstract}
+\begin{center}
+ Infinitesimal Phase Response Curves for Piecewise Smooth Dynamical Systems\\
+ \vspace{.5in}
+ 
+ Abstract\\
+ 
+ by\\
+ 
+ Charles Darwin
+\end{center}
+
+
+Your abstract goes here.
+
+Make sure to download all forms and double check the formatting:
+\begin{verbatim}http://gradstudies.case.edu/current/etd/guidelines.html\end{verbatim}
+\begin{verbatim}http://gradstudies.case.edu/current/graduation/masters.html\end{verbatim}
+\newpage
+
+
+
+%\pagestyle{headings}
+\pagenumbering{arabic}
+\section{Introduction}
+A network of silica and sodium oxide \cite{Glass1973103}
+\newpage
+% note the short title in square brackets [ ] and the long title in curly braces { }
+\section[The iPRC of Piecewise Smooth Dynamical Systems]{The Infinitesimal Phase Response Curve of Piecewise Smooth Dynamical Systems}
+
+\subsection{Discontinuities of Infinitesimal Phase Response Curves of Differential Inclusions}
+
+\begin{theorem}
+Example theorem
+\end{theorem}
+
+\begin{proof}
+Example proof \qed
+\end{proof}
+
+\begin{corollary}
+Example corollary
+\end{corollary}
+
+\subsection{Applications}
+
+
+\section{Discussion and Conclusions}
+
+
+\newpage
+\appendix
+
+%\section{Definitions}
+\section{Appendix}
+\subsection{Adjoint Equation}\label{app:adjoint_eq}
+
+\subsubsection{McKean}\label{app:mckean}
+
+\subsubsection{Iris System}\label{app:iris}
+
+\subsection{Normal Forms and Explicit Expressions for the Infinitesimal Phase Response Curve}\label{app:explicit_iprcs}
+
+\subsubsection{Subsubsection}
+
+
+
+
+\newpage
+\bibliographystyle{plain}
+\addcontentsline{toc}{section}{References}
+\bibliography{citations} % include your citations here.
+% MAKE SURE TO ADD ALL CITATIONS TO aplysia/papers/BibTeX/*.bib!!!!
+
+
+\end{document}
